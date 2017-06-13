@@ -1,4 +1,5 @@
 require './lib/prime.rb'
-
-prime = Prime.new(10)
+n = ARGV[0] ? ARGV[0].to_i : 10
+prime = Prime.new(n)
 prime.calc_table
+prime.print_table
