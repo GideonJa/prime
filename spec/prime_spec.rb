@@ -1,6 +1,6 @@
-require '../lib/prime.rb'
+require './lib/prime'
 
-describe MyModel do
+describe Prime do
   it "should be true" do
     Prime.new().should be_true
   end
