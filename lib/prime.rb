@@ -12,6 +12,10 @@ class Prime
   end
 
   def calc_table
+    if @n <= 2
+      puts "Invalid argument. #{@n} has to be greater than 2"
+      return false
+    end
     i= 4
     primery = true
     while @primes.size < @n
@@ -25,6 +29,7 @@ class Prime
       @primes << i if primery
       i+=1
     end
+    return true
   end
   
   def print_table
