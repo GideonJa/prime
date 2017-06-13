@@ -5,7 +5,7 @@ describe Prime do
 
   before(:each) do
     @prime = Prime.new()
-    @order.calc_table
+    @prime.calc_table
     @m = @prime.m
     @n = @prime.n
   end
